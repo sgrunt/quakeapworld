@@ -57,13 +57,13 @@ class QuakeWorld(World):
     ]
 
     items_ratio: Dict[str, float] = {
-        "Quad Damage": 61,
+        "Quad Damage": 54,
         "Megahealth": 48,
-        "Yellow Armor": 42,
-        "Green Armor": 38,
-        "Ring of Shadows": 23,
-        "Pentagram of Protection": 23,
-        "Red Armor": 22,
+        "Yellow Armor": 38,
+        "Green Armor": 37,
+        "Pentagram of Protection": 18,
+        "Ring of Shadows": 14,
+        "Red Armor": 14,
         "25 Health": 15,
         "Large Box of Shells": 13,
         "Large Box of Nails": 13,
