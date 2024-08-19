@@ -90,6 +90,10 @@ class QuakeWorld(World):
         self.included_episodes[3] = self.options.episode4.value
         self.included_episodes[4] = self.options.episode5.value
 
+        # If complete_end is the goal, force enable episode 5 (END)
+        if self.options.goal.value:
+            self.included_episodes[4] = 1
+
         # If no episodes selected or only END selected, select Episode 1
         if (self.get_episode_count() == 0) or (self.get_episode_count() == 1 and self.included_episodes[4]):
             self.included_episodes[0] = 1
